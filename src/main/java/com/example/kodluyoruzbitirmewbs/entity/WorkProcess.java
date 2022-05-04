@@ -1,5 +1,7 @@
 package com.example.kodluyoruzbitirmewbs.entity;
 
+
+
 import javax.persistence.Table;
 
 @Table

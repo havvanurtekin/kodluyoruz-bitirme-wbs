@@ -19,4 +19,8 @@ public class Team {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int memberCount;
 
+    @OneToMany
+    @JoinColumn(name = "userId")
+    private User user;
+
 }
