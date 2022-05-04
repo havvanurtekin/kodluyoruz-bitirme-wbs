@@ -17,19 +17,10 @@ public class Work {
     @Column
     private String workComment;
     @Column
-    private LocalDate startDate;
-    @Column
-    private LocalDate endDate;
-    @Column
-    private LocalDate targetDate;
-    @Column
     private int parentId;
 
     @ManyToOne
     @JoinColumn(name = "userId")
     private User user;
 
-    /*@ManyToOne
-    @JoinColumn(name = "userId")
-    private WorkProcess workProcess;*/
 }

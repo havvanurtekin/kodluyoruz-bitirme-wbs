@@ -2,10 +2,7 @@ package com.example.kodluyoruzbitirmewbs.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table
@@ -13,7 +10,13 @@ import javax.persistence.Table;
 public class Team {
     @Id
     @Column(name = "id", nullable = false)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
+    private int maxMemberCount = 10;
+
+    @Column
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private int memberCount;
 
 }
