@@ -1,11 +1,9 @@
-package com.example.kodluyoruzbitirmewbs.requestDto;
+package com.example.kodluyoruzbitirmewbs.responseDto;
 
 import lombok.Data;
-
-//work save request dto
+//work response dto
 @Data
-public class WorkSaveRequestDto {
-
+public class WorkResponseDto {
     private String workName;
 
     private String workComment;

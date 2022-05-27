@@ -5,23 +5,25 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-
+//work entity
 @Entity
 @Table
 @Data
 public class Work {
+
+    //features
     @Id
     @Column(name = "id", nullable = false)
     private int id;
-    @Column
+    @Column(nullable = false)
     private String workName;
-    @Column
+    @Column(nullable = false)
     private String workComment;
-    @Column
+    @Column(nullable = false)
     private int parentId;
 
     @ManyToOne
-    @JoinColumn(name = "userId")
+    @JoinColumn(name = "userId", nullable = false)
     private User user;
 
 }
